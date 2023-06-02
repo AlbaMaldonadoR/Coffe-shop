@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caftería</title>
+    <link rel="stylesheet" href="ubication.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grid-container">
+            <div class="grid-buttoms">
+                <a  class="buttom" href="ubicationenglish.html"><img class="buttom" src="../img/idioma.png"  /></a>
+                <button class="openChatBtn" onclick="openForm()"><img class="buttom" src="../img/chat.svg" /></button>
+                <div class="openChat">
+                <form>
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn close" onclick="closeForm()">
+                Close
+                </button>
+                </form>
+                </div>
+</div>
+                
+            
+        <div class="grid-hder">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="#" class="enlace">
+                    <img src="../img/logo.png" alt="" class="logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a class="active" href="ubication.html">Contacto y ubicación</a></li>
+                    <li><a  href="carta.html">Nuestra carta</a></li>
+                </ul>
+            </nav></div>
+
+<div class="grid-ubicationlogo">
+    <img class="ubication" src="../img/Ubicación.png" alt="">
+</div>
+<div class="grid-map">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.7495878088007!2d0.03875557501728641!3d40.036369978703135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a0015da98ad09f%3A0x33adc24734c18150!2sBenicassim!5e0!3m2!1ses!2ses!4v1684867132475!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="grid-contact">
+    <h1>CONTÁCTANOS</h1>
+    <p>cafeteribenicassim@gmail.com</p>
+    <p>681.32.54.98</p>
+    <p>www.cafeteriabenicassim.es</p>
+    <p>@cafeteriabenicassim </p>
+    <p class="direction">C/ Campo amor bajo 32. Benicassim. España.</p>
+</div>
+<div class="grid-footer">
+    <img class="logofooter" src="../img/logo.png" alt="">
+    <p class="footer">Terminos legales</p>
+    <button class="social" onclick="movilSocial()"><img class= "socialmedia" src="../img/movil.svg" alt="" srcset=""></button>
+    <button class="social" onclick="correoSocial()"><img class= "socialmedia" src="../img/correo.svg" alt="" srcset=""></button>
+    <button class="social" onclick="whatsappSocial()"><img class= "socialmedia" src="../img/whatsapp.svg" alt="" srcset=""></button>
+    <button class="social" onclick="instagramSocial()"><img class= "socialmedia" src="../img/instagram.svg" alt="" srcset=""></button>
+    
+</div>
+</div>
+</body>
+<script src="reserva.js"></script>
+</html>

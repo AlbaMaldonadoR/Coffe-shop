@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caftería</title>
+    <link rel="stylesheet" href="carta.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grid-container">
+            <div class="grid-buttoms">
+                <a  class="buttom" href="cartaenglish.html"><img class="buttom" src="../img/idioma.png"  /></a>
+                <button class="openChatBtn" onclick="openForm()"><img class="buttom" src="../img/chat.svg" /></button>
+                <div class="openChat">
+                <form>
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn close" onclick="closeForm()">
+                Close
+                </button>
+                </form>
+                </div>
+</div>
+                
+            
+        <div class="grid-hder">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="../img/logo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="ubication.html">Contacto y ubicación</a></li>
+            <li><a class="active" href="carta.html">Nuestra carta</a></li>
+        </ul>
+    </nav></div>
+
+    
+    <div class="grid-centro1">
+        <img src="../img/imagecarta2.jpg" alt="">
+    </div>
+    <div class="grid-derecha1">
+        <img src="../img/imagencarta10.jpg" alt="">
+    </div>
+
+    
+    <div class="grid-centro2">
+        <img src="../img/imagecarta1.jpg" alt="">
+    </div>
+    <div class="grid-derecha2">
+        <img src="../img/imagecarta3.jpg" alt="">
+    </div>
+   
+    <div class="grid-centro3">
+        <img src="../img/imagecarta4.jpg" alt="">
+    </div>
+    <div class="grid-derecha3">
+        <img src="../img/imagencarta5.jpg" alt="">
+    </div>
+    
+    <div class="grid-centro4">
+        <img src="../img/imagencarta11.jpg" alt="">
+    </div>
+    <div class="grid-derecha4">
+        <img src="../img/imagencarta6.jpg" alt="">
+    </div>
+   
+    
+    <div class="grid-carta">
+        <h1>NUESTRA CARTA</h1>
+        <table class="conespacio" >
+            <p class="Tittle">Cafes e infusiones</p>
+        <tr><td class="product">Café Irlandes</td><td class="productprice">2'50€</td></tr>
+        <tr><td class="product">Café solo</td><td class="productprice">1€</td></tr>
+        <tr><td class="product">Café con leche</td><td class="productprice">1'50€</td></tr>
+        <tr><td class="product">Té rojo</td><td class="productprice">1'50€</td></tr>
+        <tr><td class="product">Té verde</td><td class="productprice">1'50€</td></tr>
+        <tr><td class="product">Té Roibos </td><td class="productprice">2'50€</td></tr>
+        </table>
+        <table class="conespacio" >
+            <p class="Tittle">Pastelería</p>
+        <tr><td class="product">Donut's caseros</td><td class="productprice">4'50€</td></tr>
+        <tr><td class="product">Bizcocho de limón</td><td class="productprice">3€</td></tr>
+        <tr><td class="product">Paste de frutas variadas</td><td class="productprice">5'50€</td></tr>
+        <tr><td class="product">Croissant</td><td class="productprice">2'50€</td></tr>
+        <tr><td class="product">Empanada de atún</td><td class="productprice">1'50€</td></tr>
+        </table>
+        <table class="conespacio" >
+            <p class="Tittle">Batidos</p>
+        <tr><td class="product">Naranja</td><td class="productprice">4'50€</td></tr>
+        <tr><td class="product">Bizcocho de limón</td><td class="productprice">3€</td></tr>
+        <tr><td class="product">Paste de frutas variadas</td><td class="productprice">5'50€</td></tr>
+        <tr><td class="product">Croissant</td><td class="productprice">2'50€</td></tr>
+        <tr><td class="product">Empanada de atún</td><td class="productprice">1'50€</td></tr>
+        </table>
+        <table class="conespacio" >
+            <p class="Tittle">Batidos</p>
+        <tr><td class="product">Naranja</td><td class="productprice">4'50€</td></tr>
+        <tr><td class="product">Bizcocho de limón</td><td class="productprice">3€</td></tr>
+        <tr><td class="product">Paste de frutas variadas</td><td class="productprice">5'50€</td></tr>
+        <tr><td class="product">Croissant</td><td class="productprice">2'50€</td></tr>
+        <tr><td class="product">Empanada de atún</td><td class="productprice">1'50€</td></tr>
+        </table>
+            
+            
+    </div>
+
+    <div class="grid-footer">
+
+        <img class="logofooter" src="../img/logo.png" alt="">
+        <p class="footer">Terminos legales</p>
+        <button class="social" onclick="movilSocial()"><img class= "socialmedia" src="../img/movil.svg" alt="" srcset=""></button>
+        <button class="social" onclick="correoSocial()"><img class= "socialmedia" src="../img/correo.svg" alt="" srcset=""></button>
+        <button class="social" onclick="whatsappSocial()"><img class= "socialmedia" src="../img/whatsapp.svg" alt="" srcset=""></button>
+        <button class="social" onclick="instagramSocial()"><img class= "socialmedia" src="../img/instagram.svg" alt="" srcset=""></button>
+        
+    </div>
+    </div>
+</body>
+<script src="reserva.js"></script>
+</html>

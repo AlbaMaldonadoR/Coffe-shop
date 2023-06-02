@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{  
+    font-family: 'Righteous', cursive;
+    padding: 5;
+    margin: 3;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 1fr 2fr 2fr 3fr ;
+    grid-template-columns: 30fr 20fr 20fr 20fr  ;
+    grid-gap: 1px;
+    grid-template-areas:
+    " areaheader areaheader areaheader areaheader"
+    " . . . ."
+    " arealogo arealogo areacontact areacontact"
+    " areamap areamap areacontact areacontact"
+    " areamap areamap areacontact areacontact"
+    "  areafooter areafooter areafooter areafooter"
+    
+    }
+    
+    .grid-buttoms{
+        background-color:#CC8D65;
+        border-radius: 12px;
+        display: flex;
+        grid-area: areabuttoms;
+        height: 5rem;
+        margin-top: 20%;
+        margin-left: 80%;
+        position: fixed;
+        top: 0;
+        width: 20%;    
+    }
+    .grid-contact{
+        border: 3px solid #000;
+        border-radius: 12px;
+        margin-right: 10%;
+        padding-left: 25%;
+        grid-area: areacontact;
+    }
+    
+    .grid-hder {
+        background-color: #211F1A;
+        border-radius: 12px;
+        grid-area: areaheader;}
+        nav{
+            background-color: #211F1A;
+            height: 100px;
+            width: 100%;
+        }
+        .enlace{
+            position: absolute;
+            padding: 20px 50px;
+        }
+        .logo{
+            background-color: #211F1A;
+            height: 80px;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            background-color: #211F1A;
+            color: #fff;
+            font-size: 18px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        li a.active, li a:hover{
+            background-color: #211F1A;
+            background:  #CC8D65;
+            transition: .5s;
+        }
+        .checkbtn{
+            background-color: #211F1A;
+            font-size: 30px;
+            color: #fff;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            background-color: #211F1A;
+            display: none;
+        }
+                
+
+    .grid-footer{ 
+        background: linear-gradient(  white , #CC8D65 );
+        grid-area: areafooter;
+        margin-top: 4%;
+    }
+    .grid-map{
+        padding:4%;
+        grid-area: areamap;
+    }
+    .grid-ubicationlogo{
+        
+        display: flex;
+        grid-area: arealogo;
+    }
+    .buttom  {
+        background-color:#CC8D65;
+        margin-left: 9%;
+        margin-top: 8%;
+        height:30px;
+        width: 30px;
+        }
+       
+        .direction{
+            border: 3px solid #000;
+            border-radius: 12px;
+            padding: 7%; 
+        }
+        .enlace{
+            position: absolute;
+            padding: 20px 50px;
+        }
+        .footer{
+            background: none;
+            font-family: 'Pacifico', serif;
+            margin-left: 30%;
+            margin-top: -5%;
+           }
+        h1{
+            margin-bottom: 30%;
+        }
+           li a.active, li a:hover{
+            background-color: #211F1A;
+            background:  #CC8D65;
+            transition: .5s;
+        }
+        .logofooter{
+            margin-left: 10%;
+            height: 100px;
+            width: 100px;
+           }
+           .logo{
+            background-color: #211F1A;
+            height: 80px;
+        }
+        p{
+            margin-right: 40%;
+            margin-top: 10%;
+            text-align: center;
+        }
+        .ubication{
+           margin-left: 40%;
+           height: 100px;
+           width: 100px;
+        }
+           
+            
+
+                .socialmedia , .social{
+                    background: none;
+                    border-style: none;
+                    display: block;
+                    margin-bottom: 1%;
+                    margin-left:50%;
+                    height:30px;
+                    width: 30px;
+                   }
+                   .openChatBtn {
+                    background-color:#CC8D65;
+                    border-style: none;
+                 }
+                  .openChat {
+                     display: none;
+                     position: fixed;
+                     bottom: 0;
+                     right: 15px;
+                     
+                     z-index: 9;
+                  }
+                  form {
+                     max-width: 300px;
+                     padding: 10px;
+                     background-color: white;
+                  }
+                  form textarea {
+                     width: 70%;
+                     font-size: 18px;
+                     padding: 15px;
+                     margin: 5px 0 22px 0;
+                     border: none;
+                     font-weight: 100;
+                     background:white;
+                     color: rgb(0, 0, 0);
+                     resize: none;
+                     min-height: 200px;
+                  }
+                  form textarea:focus {
+                     background-color: white;
+                     outline: none;
+                  }
+                  form .btn {
+                     background-color:#211F1A;
+                     color: white;
+                     padding: 16px 20px;
+                     font-weight: bold;
+                     border: none;
+                     cursor: pointer;
+                     width: 100%;
+                     margin-bottom: 10px;
+                     opacity: 0.8;
+                  }
+                  form .close {
+                     background-color:#CC8D65;
+                  }
+                  form .btn:hover, .openChatBtn:hover {
+                     opacity: 1;
+                  }
+
+
+                   @media (max-width: 952px){
+                    .enlace{
+                        padding-left: 20px;
+                    }
+                    nav ul li a{
+                        font-size: 16px;
+                    }
+                
+                }
+                
+                @media (max-width: 858px){
+                    .grid-container {
+                        display: grid;
+                        grid-template-rows: 0.5fr 2fr 5fr 6fr 3fr  ;
+                        grid-template-columns:60fr ;
+                        grid-gap: 1px;
+                        grid-template-areas:
+                        " areaheader "
+                        "arealogo"
+                        " areamap "
+                        "areacontact"
+                        " areafooter "
+                    }    
+                        .grid-buttoms{
+                            background-color:#CC8D65;
+                            border-radius: 12px;
+                            display: flex;
+                            grid-area: areabuttoms;
+                            height: 3rem;
+                            margin-top: 40%;
+                            margin-left: 50%;
+                            position: fixed;
+                            top: 0;
+                            width: 60%; }
+                            .grid-contact{
+                                border: 3px solid #000;
+                                border-radius: 12px;
+                                margin-left: 10%;
+                                padding-left: 15%;
+                                grid-area: areacontact;
+                            }
+                    .buttom  {
+                        background-color:#CC8D65;
+                        margin-left: 20%;
+                        margin-top: 5%;
+                        height:20px;
+                        width: 20px;
+                        }
+                    .checkbtn{
+                        display: block;
+                    }
+                    #check:checked ~ ul{
+                        left:0;
+                    }
+                    li a:hover, li a.active{
+                        background: none;
+                        color: #CC8D65;
+                    }
+                    nav ul li{
+                        display: block;
+                        margin: 50px 0;
+                        line-height: 30px;
+                    }
+                    nav ul li a{
+                        font-size: 20px;
+                    }
+                    h1{
+                        text-align: center;
+                        margin-bottom: 30%; 
+                        margin-right: 20%;   
+                    }
+                    p{
+                        margin-right: 20%;
+                        margin-top: 10%;
+                        text-align: center;
+                    }
+                   
+                    ul{
+                        position: fixed;
+                        width: 100%;
+                        height: 100vh;
+                        background: #211F1A;
+                        top: 80px;
+                        left: -100%;
+                        text-align: center;
+                        transition: all .5s;
+                    }
+                    .map{
+                        height:90%;
+                        width: 100%;
+                    }
+                   
+                    .ubication{
+                        margin-top: 10%;
+                        margin-left: 40%;
+                        height: 100px;
+                        width: 100px;
+                     
+                }
+                .footer{
+                    background: none;
+                    font-family: 'Pacifico', serif;
+                    margin-left: 35%;
+                    margin-top:4%;
+                   }
+                .logofooter{
+                    margin-left: 10%;
+                    height: 100px;
+                    width: 100px;
+                   } }

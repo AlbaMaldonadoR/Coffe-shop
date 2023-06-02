@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{  
+    font-family: 'Righteous', cursive;
+    padding: 2;
+    margin: 3;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 3fr 3fr 4fr 2fr ;
+    grid-template-columns: 40fr 20fr 40fr 20fr 40fr ;
+    grid-gap: 1px;
+    grid-template-areas:
+    "areaheader areaheader areaheader areaheader areaheader"
+    "areaimage areaimage areaimage areaimage areaimage"
+    "areaimage1 areaimage1 areatext1 areatext1 areatext1"
+    " areatext2 areatext2 areatext2 areaimage2 areaimage2"
+    "areavalue1 . areavalue2 . areavalue3 "
+    "areafooter areafooter areafooter areafooter areafooter"
+    
+    }
+    .grid-buttoms{
+        background-color:#CC8D65;
+        border-radius: 12px;
+        display: flex;
+        grid-area: areabuttoms;
+        height: 5rem;
+        margin-top: 20%;
+        margin-left: 80%;
+        position: fixed;
+        top: 0;
+        width: 20%;  
+        
+    }
+    .grid-hder {
+        background-color: #211F1A;
+        border-radius: 12px;
+        grid-area: areaheader;
+                  }
+                  nav{
+                    background-color: #211F1A;
+                    height: 100px;
+                    width: 100%;
+                }
+                .enlace{
+                    position: absolute;
+                    padding: 20px 50px;
+                }
+                .logo{
+                    background-color: #211F1A;
+                    height: 80px;
+                }
+                nav ul{
+                    float: right;
+                    margin-right: 20px;
+                }
+                nav ul li{
+                    display: inline-block;
+                    line-height: 80px;
+                    margin: 0 5px;
+                }
+                nav ul li a{
+                    background-color: #211F1A;
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                }
+                li a.active, li a:hover{
+                    background-color: #211F1A;
+                    background:  #CC8D65;
+                    transition: .5s;
+                }
+                .checkbtn{
+                    background-color: #211F1A;
+                    font-size: 30px;
+                    color: #fff;
+                    float: right;
+                    line-height: 80px;
+                    margin-right: 40px;
+                    cursor: pointer;
+                    display: none;
+                }
+                #check{
+                    background-color: #211F1A;
+                    display: none;
+                }
+                
+                
+    .grid-footer{ 
+        background: linear-gradient(  white , #CC8D65 );
+        grid-area: areafooter;
+    }
+    .grid-image {
+        grid-area:areaimage;
+        
+    }
+                .welcomeimg{
+                  
+                    height:auto ;
+                    padding-top: 2%;
+                    width: 100%;
+                }
+    .grid-img1 {
+        grid-area: areaimage1;
+       
+       
+    }
+    .grid_img2 {
+        grid-area:areaimage2;
+        
+    }
+    .grid-txt1{
+        
+        grid-area: areatext1;
+       
+    }
+    .grid-txt2{
+        grid-area: areatext2;
+       
+    }
+    .txt , h1{
+        padding: 5%;
+        text-align: justify;
+    }
+    .grid-value1{
+        grid-area: areavalue1;
+    }
+    .grid-value2{
+        grid-area: areavalue2;
+    }
+    .grid-value3{
+        grid-area: areavalue3;
+
+       
+    }
+ 
+   .footer{
+    background: none;
+    font-family: 'Pacifico', serif;
+    margin-left: 30%;
+    margin-top: -5%;
+   }
+    .buttom  {
+    background-color:#CC8D65;
+    margin-left: 9%;
+    margin-top: 8%;
+    height:30px;
+    width: 30px;
+    }
+.imgknow{
+    
+    padding: 5%;
+    padding-top: 6%;
+    height: 80%;
+    width: 100%;
+}
+.imgvalue{
+    margin: auto;
+  display: block;
+    height: auto;
+    width: 80%; 
+}
+.logofooter{
+    margin-left: 10%;
+    height: 100px;
+    width: 100px;
+   }
+p , h2{ 
+    padding: 9%;
+    text-align:justify;
+}
+.socialmedia , .social{
+    background: none;
+    border-style: none;
+    display: block;
+    margin-bottom: 1%;
+    margin-left:50%;
+    height:30px;
+    width: 30px;
+   }
+   .openChatBtn {
+    background-color:#CC8D65;
+    border-style: none;
+ }
+  .openChat {
+     display: none;
+     position: fixed;
+     bottom: 0;
+     right: 15px;
+     
+     z-index: 9;
+  }
+  form {
+     max-width: 300px;
+     padding: 10px;
+     background-color: white;
+  }
+  form textarea {
+     width: 70%;
+     font-size: 18px;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     font-weight: 100;
+     background:white;
+     color: rgb(0, 0, 0);
+     resize: none;
+     min-height: 200px;
+  }
+  form textarea:focus {
+     background-color: white;
+     outline: none;
+  }
+  form .btn {
+     background-color:#211F1A;
+     color: white;
+     padding: 16px 20px;
+     font-weight: bold;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     margin-bottom: 10px;
+     opacity: 0.8;
+  }
+  form .close {
+     background-color:#CC8D65;
+  }
+  form .btn:hover, .openChatBtn:hover {
+     opacity: 1;
+  }
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 858px){
+    .grid-container {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 3fr 3fr 3fr 3fr 4fr 5fr 5fr 3fr;
+        grid-template-columns: auto ;
+        grid-gap: 1px;
+        grid-template-areas:
+        "areaheader "
+        "areaimage"
+        "areaimage1"
+        "areatext1"
+        "areaimage2"
+        "areatext2"
+        "areavalue1"
+        "areavalue2"
+        "areavalue3"
+        "areafooter "
+        
+        }
+        .grid-buttoms{
+            background-color:#CC8D65;
+            border-radius: 12px;
+            display: flex;
+            grid-area: areabuttoms;
+            height: 3rem;
+            margin-top: 40%;
+            margin-left: 50%;
+            position: fixed;
+            top: 0;
+            width: 60%; }
+            .buttom  {
+                background-color:#CC8D65;
+                margin-left: 20%;
+                margin-top: 5%;
+                height:20px;
+                width: 20px;
+                }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #CC8D65;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #211F1A;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    h1{
+        align-items:center
+        
+    }
+    
+   
+}

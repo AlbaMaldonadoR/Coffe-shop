@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caftería</title>
+    <link rel="stylesheet" href="reserva.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grid-container">
+            <div class="grid-buttoms">
+                
+               
+                <a  class="buttom" href="reservas.html"><img class="buttom" src="../img/idioma.png"  /></a>
+                <button class="openChatBtn" onclick="openForm()"><img class="buttom" src="../img/chat.svg" /></button>
+                <div class="openChat">
+                <form>
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn close" onclick="closeForm()">
+                Close
+                </button>
+                </form>
+                </div>
+                
+                
+</div>
+                
+            
+        <div class="grid-hder">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="../img/logo.png" alt="" class="logo">
+        </a>
+        <ul class="header">
+            <li><a href="index.html">Index</a></li>
+            <li><a class="active"  href="reservas.html">Booking</a></li>
+            <li><a href="ubication.html">Contact and ubication</a></li>
+            <li><a href="carta.html">Our dishes</a></li>
+        </ul>
+    </nav>
+    <section></section>
+</div>
+<div class="grid-calendar">
+    <div class="calendar__info">
+        <div class="calendar__prev" id="prev-month">&#9664;</div>
+        <div class="calendar__month" id="month"></div>
+        <div class="calendar__year" id="year"></div>
+        <div class="calendar__next" id="next-month">&#9654;</div>
+    </div>
+
+    <div class="calendar__week">
+        <div class="calendar__day calendar__item">M</div>
+        <div class="calendar__day calendar__item">T</div>
+        <div class="calendar__day calendar__item">W</div>
+        <div class="calendar__day calendar__item">TH</div>
+        <div class="calendar__day calendar__item">F</div>
+        <div class="calendar__day calendar__item">SA</div>
+        <div class="calendar__day calendar__item">S</div>
+    </div>
+
+    <div class="calendar__dates" id="dates"></div>
+</div>
+<div class="grid-questions">
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+         <li>
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="user_name" />
+         </li>
+
+         <li>
+            <label for="mail">Phone:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="mail">Number of team:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <p>Choose the hour of the date</p>
+         </form>
+         <button class="time"> 21:00</button>
+         <button class="time"> 21:30</button>
+         <button class="time"> 20:00</button>
+         <button class="time"> 20:30</button>
+         <button class="time"> 14:00</button>
+         <button class="time"> 14:30</button>
+         <button class="time"> 13:00</button>
+         <button class="time"> 13:30</button>
+        
+         <button class="booking" onclick="firstExample()">SAVE</button>
+</div>
+<div class="grid-footer">
+    <img class="logofooter" src="../img/logo.png" alt="">
+    <p class="footer">Terminos legales</p>
+    <button class="social" onclick="movilSocial()"><img class= "socialmedia" src="../img/movil.svg" alt="" srcset=""></button>
+    <button class="social" onclick="correoSocial()"><img class= "socialmedia" src="../img/correo.svg" alt="" srcset=""></button>
+    <button class="social" onclick="whatsappSocial()"><img class= "socialmedia" src="../img/whatsapp.svg" alt="" srcset=""></button>
+    <button class="social" onclick="instagramSocial()"><img class= "socialmedia" src="../img/instagram.svg" alt="" srcset=""></button>
+    
+</div>
+</div>
+</body>
+<script src="reserva.js"></script>
+</html>
